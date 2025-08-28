@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vodacom Business Internet Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #e10000 0%, #7c0000 100%);
+        }
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-8" src="https://www.vodacom.co.za/vodacom/images-2/vodacom-logo.svg" alt="Vodacom Logo">
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#" class="text-red-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" class="text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Business Solutions</a>
+                        <a href="#" class="text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#" class="text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700">Sign Up</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-red-600" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Vodacom Business Internet Solutions
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl">
+                    Reliable Connectivity for Home & Business
+                </p>
+                <div class="mt-10 flex justify-center space-x-6">
+                    <a href="#" class="bg-white text-red-600 px-8 py-3 rounded-md text-base font-medium hover:bg-gray-100 md:py-4 md:text-lg md:px-10">
+                        Get Started
+                    </a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-md text-base font-medium hover:bg-red-700 md:py-4 md:text-lg md:px-10">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Business Internet" class="rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Stay connected with Vodacom Business LTE
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-600">
+                        Fast, affordable, and flexible packages designed to keep your home or business online without interruptions. Our reliable network ensures you stay connected when it matters most.
+                    </p>
+                    <div class="mt-8">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700">
+                                View Packages
+                                <i class="fas fa-arrow-right ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Packages Section -->
+    <div class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Available Packages
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Choose the plan that fits your needs and budget
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+                <!-- 10Mbps Package -->
+                <div class="package-card bg-white p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900">10 Mbps</h3>
+                        <div class="mt-6">
+                            <div class="bg-red-50 p-4 rounded-lg mb-4">
+                                <p class="text-sm font-medium text-gray-500">Router included (24 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-red-600">R399 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-500">Router included (36 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-gray-900">R349 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="block w-full bg-gray-100 border border-transparent rounded-md py-2 px-4 text-base font-medium text-gray-800 hover:bg-gray-200">
+                                Select Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 20Mbps Package -->
+                <div class="package-card bg-white p-8 rounded-xl shadow-md transition-all duration-300 relative">
+                    <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">
+                        POPULAR
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900">20 Mbps</h3>
+                        <div class="mt-6">
+                            <div class="bg-red-50 p-4 rounded-lg mb-4">
+                                <p class="text-sm font-medium text-gray-500">Router included (24 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-red-600">R499 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-500">Router included (36 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-gray-900">R449 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="block w-full bg-red-600 border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-red-700">
+                                Select Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 30Mbps Package -->
+                <div class="package-card bg-white p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900">30 Mbps</h3>
+                        <div class="mt-6">
+                            <div class="bg-red-50 p-4 rounded-lg mb-4">
+                                <p class="text-sm font-medium text-gray-500">Router included (24 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-red-600">R599 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-500">Router included (36 Months)</p>
+                                <p class="mt-1 text-2xl font-bold text-gray-900">R549 <span class="text-lg font-normal">p/m</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="block w-full bg-gray-100 border border-transparent rounded-md py-2 px-4 text-base font-medium text-gray-800 hover:bg-gray-200">
+                                Select Plan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <p class="text-gray-600">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i> Higher speeds available on request
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Key Benefits
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
+                    Why choose Vodacom Business LTE?
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid gap-16 md:grid-cols-2 lg:gap-x-20 lg:gap-y-16">
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-wallet text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Affordable Internet Plans</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Starting from just R349 p/m x 36 months with no hidden costs and transparent pricing.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-calendar-alt text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Flexibility</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Choose between 24-month or 36-month contracts to best suit your business needs.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-briefcase text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Business-Ready</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Keep your telephone number and switch to Vodacom Business Wireless seamlessly.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Convenient Calling</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Make calls using your business internet connection with crystal clear quality.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-shield-alt text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Trusted Network</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Powered by Vodacom, South Africa's leading telecom provider with 99% network coverage.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                <i class="fas fa-headset text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">24/7 Support</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Dedicated business support team available anytime you need assistance.
+                        </dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Connect -->
+    <div class="gradient-bg text-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">
+                    How to Get Connected
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl mx-auto">
+                    Getting started with Vodacom Business LTE is quick and easy
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-10 md:grid-cols-3">
+                <div class="flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-white text-red-600 mb-6">
+                        <i class="fas fa-store text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Visit a Store</h3>
+                    <p class="mt-4 text-gray-200">
+                        Get personalized assistance at your nearest Vodacom store
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-white text-red-600 mb-6">
+                        <i class="fas fa-globe text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Online</h3>
+                    <p class="mt-4 text-gray-200">
+                        Search vodacombusiness online to sign up from anywhere
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-white text-red-600 mb-6">
+                        <i class="fas fa-phone-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Call Us</h3>
+                    <p class="mt-4 text-gray-200">
+                        Call <span class="font-bold">082 1960</span> for expert assistance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Representative -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl">
+                        <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-50"></div>
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Business Representative">
+                        <div class="relative z-10 p-8 text-white">
+                            <h2 class="text-3xl font-bold mb-4">Contact Representative</h2>
+                            <p class="text-xl mb-6">For quick sign-up and assistance, contact:</p>
+                            <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-6">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-16 w-16 rounded-full bg-white flex items-center justify-center text-red-600 text-2xl font-bold">
+                                        N
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3 class="text-xl font-bold">Nathan</h3>
+                                        <p class="text-lg"><i class="fas fa-phone-alt mr-2"></i> 076 964 4454</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Need Personalized Assistance?
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-600">
+                        Our dedicated business representatives are ready to help you choose the perfect package for your needs. Get expert advice and a seamless sign-up process.
+                    </p>
+                    <div class="mt-8">
+                        <div class="grid grid-cols-1 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" id="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500">
+                            </div>
+                            <div>
+                                <label for="business" class="block text-sm font-medium text-gray-700">Business Name</label>
+                                <input type="text" id="business" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500">
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                                    Request Call Back
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand Promise -->
+    <div class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <img class="h-12 mx-auto mb-6 floating-animation" src="https://www.vodacom.co.za/vodacom/images-2/vodacom-logo.svg" alt="Vodacom Logo">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Brand Promise
+                </h2>
+                <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-600">
+                    Vodacom Business keeps your home and business connected with reliable speeds, affordable pricing, and world-class service.
+                </p>
+                <p class="mt-8 text-2xl font-medium text-red-600">
+                    Further together.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Business LTE</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Fiber</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">5G</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Support</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Connect</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f mr-2"></i> Facebook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter mr-2"></i> Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in mr-2"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8">
+                <p class="text-base text-gray-400">
+                    &copy; 2023 Vodacom Business. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hover effect for package cards if needed
+        document.querySelectorAll('.package-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'all 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>
